@@ -1,0 +1,149 @@
+:root {
+  --cream: #FBF1E4;
+  --cream-2: #F3E3CE;
+  --card: #FFFFFF;
+  --card-soft: #FBF6EE;
+  --line: #EFDCC4;
+  --line-strong: #E8D4BC;
+  --orange: #E8833C;
+  --orange-deep: #9A4A1B;
+  --brown: #3D2A1C;
+  --muted: #8A7360;
+  --green: #6DAE43;
+  --green-bg: #EAF3DE;
+  --green-text: #4F9A2E;
+  --purple: #6B5CC4;
+  --purple-bg: #ECEAFB;
+  --red-bg: #FCEBEB;
+  --red-text: #A32D2D;
+  --amber-bg: #FAEEDA;
+  --amber-text: #9A6A1B;
+  --gold: #E0A82E;
+  --shadow: 0 2px 8px rgba(120, 80, 40, 0.08);
+}
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: -apple-system, "Segoe UI", Roboto, system-ui, sans-serif;
+  background: #e9ddc8;
+  color: var(--brown);
+}
+a { color: inherit; text-decoration: none; }
+button { font-family: inherit; cursor: pointer; }
+
+/* Phone frame — mobile-first, centered on desktop */
+.app {
+  max-width: 480px;
+  margin: 0 auto;
+  min-height: 100vh;
+  background: var(--cream);
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.topbar {
+  position: sticky; top: 0; z-index: 20;
+  display: flex; align-items: center; gap: 10px;
+  padding: 14px 16px;
+  background: var(--cream-2);
+  border-bottom: 1px solid var(--line-strong);
+}
+.topbar .back { border: none; background: none; font-size: 20px; color: var(--orange-deep); padding: 2px 4px; }
+.topbar .title { font-size: 17px; font-weight: 600; color: var(--orange-deep); }
+.topbar .right { margin-left: auto; display: flex; align-items: center; gap: 8px; }
+.pill { font-size: 12px; padding: 3px 10px; border-radius: 12px; font-weight: 600; }
+.pill-streak { color: #D96A2B; background: #FBE7D4; }
+.pill-level { color: var(--amber-text); background: #F6E0C2; }
+
+.screen { flex: 1; padding: 16px; padding-bottom: 86px; }
+
+.card {
+  background: var(--card); border: 1px solid var(--line);
+  border-radius: 14px; padding: 14px; box-shadow: var(--shadow);
+}
+.card-soft { background: var(--card-soft); border: 1px solid var(--line); border-radius: 14px; padding: 14px; }
+
+h1 { font-size: 22px; margin: 0 0 4px; }
+h2 { font-size: 18px; margin: 0 0 8px; }
+.sub { color: var(--muted); font-size: 13px; margin: 0; }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: 6px;
+  border: 1px solid var(--line-strong); background: #fff; color: var(--orange-deep);
+  padding: 11px 14px; border-radius: 12px; font-size: 14px; font-weight: 600; width: 100%;
+}
+.btn:active { transform: scale(0.98); }
+.btn-primary { background: var(--orange); color: #fff; border: none; }
+.btn-green { background: var(--green); color: #fff; border: none; }
+.btn-ghost { background: transparent; }
+.row { display: flex; gap: 10px; }
+
+.chip { font-size: 11px; padding: 3px 9px; border-radius: 10px; font-weight: 600; display: inline-flex; align-items: center; gap: 4px; }
+.chip-easy { background: var(--green-bg); color: var(--green-text); }
+.chip-medium { background: var(--amber-bg); color: var(--amber-text); }
+.chip-hard { background: var(--red-bg); color: var(--red-text); }
+.chip-pattern { background: var(--purple-bg); color: var(--purple); }
+.chip-lc { background: var(--cream-2); color: var(--amber-text); }
+
+.bar { height: 7px; background: #EDE2D0; border-radius: 5px; overflow: hidden; }
+.bar > span { display: block; height: 100%; background: var(--green); }
+.bar-orange > span { background: var(--orange); }
+
+.list-item {
+  display: flex; align-items: center; gap: 12px;
+  padding: 12px 0; border-bottom: 1px solid var(--line);
+}
+.list-item:last-child { border-bottom: none; }
+.icon-badge { width: 36px; height: 36px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-weight: 700; flex-shrink: 0; }
+
+.tabbar {
+  position: fixed; bottom: 0; left: 50%; transform: translateX(-50%);
+  width: 100%; max-width: 480px;
+  display: flex; background: var(--cream-2); border-top: 1px solid var(--line-strong);
+  z-index: 30;
+}
+.tabbar a {
+  flex: 1; text-align: center; padding: 9px 0 10px; font-size: 10px; color: #A08C78;
+  display: flex; flex-direction: column; align-items: center; gap: 3px;
+}
+.tabbar a.active { color: #D96A2B; }
+.tabbar .ico { font-size: 20px; line-height: 1; }
+
+.center { text-align: center; }
+.muted { color: var(--muted); }
+.mt { margin-top: 14px; }
+.mb { margin-bottom: 12px; }
+.grid3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+
+.stat { border-radius: 14px; padding: 12px; }
+.stat .n { font-size: 22px; font-weight: 700; margin: 4px 0 0; }
+.stat .l { font-size: 11px; color: var(--muted); margin: 0; }
+
+.story { background: #FDF3E3; border: 1px solid #F1DFC4; border-radius: 14px; padding: 14px; }
+.story .k { font-size: 12px; font-weight: 700; color: var(--orange-deep); margin: 0 0 6px; }
+.story p { font-size: 14px; line-height: 1.75; margin: 0; color: #4D3A2A; }
+
+.codebox { background: #2B2620; border-radius: 12px; padding: 12px 14px; overflow-x: auto; }
+.codebox pre { margin: 0; font-family: "SF Mono", Consolas, monospace; font-size: 12.5px; line-height: 1.65; color: #E8D9C4; white-space: pre; }
+
+.quiz-opt {
+  border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; font-size: 14px; margin-bottom: 9px; background: #fff;
+}
+.quiz-opt.correct { background: var(--green-bg); border-color: var(--green); color: #085041; }
+.quiz-opt.wrong { background: var(--red-bg); border-color: #E24B4A; color: #791F1F; }
+
+.loading { text-align: center; color: var(--muted); padding: 40px 0; font-size: 14px; }
+.badge-lock { color: var(--muted); }
+
+/* Journey map */
+.map-wrap { position: relative; height: 320px; margin: 8px 0; background: #E2DBBE; border-radius: 16px; overflow: hidden; }
+.map-node { position: absolute; text-align: center; width: 72px; transform: translate(-50%, -50%); }
+.map-dot { width: 52px; height: 52px; border-radius: 50%; border: 3px solid #fff; display: inline-flex; align-items: center; justify-content: center; color: #fff; font-size: 20px; box-shadow: 0 2px 6px rgba(0,0,0,0.18); }
+.map-dot.done { background: var(--green); }
+.map-dot.current { background: var(--orange); width: 58px; height: 58px; }
+.map-dot.open { background: #C9A86A; }
+.map-dot.locked { background: #D8C7A8; color: var(--muted); }
+.map-label { font-size: 9px; font-weight: 600; background: #fff; padding: 2px 6px; border-radius: 8px; display: inline-block; margin-top: 4px; }
+.map-label.current { background: var(--orange-deep); color: #fff; }

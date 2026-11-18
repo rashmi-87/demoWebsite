@@ -1,0 +1,87 @@
+{
+  "meta": {
+    "name": "DSA",
+    "source": "RisingBrain Pattern-Wise Sheet",
+    "totalProblems": 385,
+    "note": "Array topic is fully seeded. Run `npm run import` after placing dsa_questions_385.json in server/data to populate all 17 topics."
+  },
+  "topics": [
+    {
+      "name": "Array",
+      "slug": "array",
+      "description": "Fundamental collection of elements stored at contiguous memory locations.",
+      "problemCount": 24,
+      "locked": false,
+      "patterns": [
+        {
+          "name": "Two-Pointer",
+          "slug": "array-two-pointer",
+          "strategy": "Use two indices that move towards or away from each other to reduce redundant comparisons.",
+          "problems": [
+            { "slug": "problem_0001", "title": "Two Sum II", "reference": "LC 167", "difficulty": "MEDIUM", "leetcodeUrl": "https://leetcode.com/problems/two-sum-ii-input-array-is-sorted/" },
+            { "slug": "problem_0002", "title": "3Sum", "reference": "LC 15", "difficulty": "MEDIUM", "leetcodeUrl": "https://leetcode.com/problems/3sum/" },
+            { "slug": "problem_0003", "title": "Sort Colors", "reference": "LC 75", "difficulty": "MEDIUM", "leetcodeUrl": "https://leetcode.com/problems/sort-colors/" },
+            { "slug": "problem_0004", "title": "Move Zeroes", "reference": "LC 283", "difficulty": "EASY", "leetcodeUrl": "https://leetcode.com/problems/move-zeroes/" },
+            { "slug": "problem_0005", "title": "Container With Most Water", "reference": "LC 11", "difficulty": "MEDIUM", "leetcodeUrl": "https://leetcode.com/problems/container-with-most-water/" },
+            { "slug": "problem_0006", "title": "Trapping Rain Water", "reference": "LC 42", "difficulty": "HARD", "leetcodeUrl": "https://leetcode.com/problems/trapping-rain-water/" }
+          ]
+        },
+        {
+          "name": "Sliding Window",
+          "slug": "array-sliding-window",
+          "strategy": "Maintain a window of fixed size or expand/shrink it to satisfy a condition.",
+          "problems": [
+            { "slug": "problem_0007", "title": "Maximum Sum Subarray of Size K", "reference": "GFG", "difficulty": "EASY", "leetcodeUrl": "https://leetcode.com/problems/maximum-sum-of-distinct-subarrays-with-length-k/" },
+            { "slug": "problem_0008", "title": "Max Consecutive Ones", "reference": "LC 485", "difficulty": "EASY", "leetcodeUrl": "https://leetcode.com/problems/max-consecutive-ones/" },
+            { "slug": "problem_0009", "title": "Max Consecutive Ones III", "reference": "LC 1004", "difficulty": "MEDIUM", "leetcodeUrl": "https://leetcode.com/problems/max-consecutive-ones-iii/" },
+            { "slug": "problem_0010", "title": "Subarray Product Less Than K", "reference": "LC 713", "difficulty": "MEDIUM", "leetcodeUrl": "https://leetcode.com/problems/subarray-product-less-than-k/" },
+            { "slug": "problem_0011", "title": "Sliding Window Maximum", "reference": "LC 239", "difficulty": "HARD", "leetcodeUrl": "https://leetcode.com/problems/sliding-window-maximum/" },
+            { "slug": "problem_0012", "title": "Subarray with K Distinct Integers", "reference": "LC 992", "difficulty": "HARD", "leetcodeUrl": "https://leetcode.com/problems/subarrays-with-k-different-integers/" },
+            { "slug": "problem_0013", "title": "Fruits Into Baskets", "reference": "LC 904", "difficulty": "MEDIUM", "leetcodeUrl": "https://leetcode.com/problems/fruit-into-baskets/" },
+            { "slug": "problem_0014", "title": "Minimum Size Subarray Sum", "reference": "LC 209", "difficulty": "MEDIUM", "leetcodeUrl": "https://leetcode.com/problems/minimum-size-subarray-sum/" }
+          ]
+        },
+        {
+          "name": "Prefix Sum",
+          "slug": "array-prefix-sum",
+          "strategy": "Precompute cumulative sums so any subarray or range sum can be answered in O(1).",
+          "problems": [
+            { "slug": "problem_0015", "title": "Subarray Sum Equals K", "reference": "LC 560", "difficulty": "MEDIUM", "leetcodeUrl": "https://leetcode.com/problems/subarray-sum-equals-k/" },
+            { "slug": "problem_0016", "title": "Matrix Block Sum", "reference": "LC 1314", "difficulty": "MEDIUM", "leetcodeUrl": "https://leetcode.com/problems/matrix-block-sum/" },
+            { "slug": "problem_0017", "title": "Product of Array Except Self", "reference": "LC 238", "difficulty": "MEDIUM", "leetcodeUrl": "https://leetcode.com/problems/product-of-array-except-self/" },
+            { "slug": "problem_0018", "title": "Continuous Subarray Sum", "reference": "LC 523", "difficulty": "MEDIUM", "leetcodeUrl": "https://leetcode.com/problems/continuous-subarray-sum/" },
+            { "slug": "problem_0019", "title": "Subarray Sum Divisible by K", "reference": "LC 974", "difficulty": "MEDIUM", "leetcodeUrl": "https://leetcode.com/problems/subarray-sums-divisible-by-k/" },
+            { "slug": "problem_0020", "title": "Find Pivot Index", "reference": "LC 724", "difficulty": "EASY", "leetcodeUrl": "https://leetcode.com/problems/find-pivot-index/" }
+          ]
+        },
+        {
+          "name": "Kadane's Algorithm",
+          "slug": "array-kadane-s-algorithm",
+          "strategy": "Track the best subarray sum ending at each index and update the global maximum.",
+          "problems": [
+            { "slug": "problem_0021", "title": "Maximum Subarray", "reference": "LC 53", "difficulty": "MEDIUM", "leetcodeUrl": "https://leetcode.com/problems/maximum-subarray/" },
+            { "slug": "problem_0022", "title": "Maximum Product Subarray", "reference": "LC 152", "difficulty": "MEDIUM", "leetcodeUrl": "https://leetcode.com/problems/maximum-product-subarray/" },
+            { "slug": "problem_0023", "title": "Maximum Sum Circular Subarray", "reference": "LC 918", "difficulty": "MEDIUM", "leetcodeUrl": "https://leetcode.com/problems/maximum-sum-circular-subarray/" },
+            { "slug": "problem_0024", "title": "Maximum Absolute Sum of Any Subarray", "reference": "LC 1749", "difficulty": "MEDIUM", "leetcodeUrl": "https://leetcode.com/problems/maximum-absolute-sum-of-any-subarray/" }
+          ]
+        }
+      ]
+    },
+    { "name": "Strings", "slug": "strings", "description": "Sequence of characters and common string manipulation patterns.", "problemCount": 11, "locked": true, "patterns": [] },
+    { "name": "Binary Search", "slug": "binary-search", "description": "Efficient search that halves the search interval each step.", "problemCount": 23, "locked": true, "patterns": [] },
+    { "name": "Stack", "slug": "stack", "description": "LIFO (Last In First Out) data structure patterns.", "problemCount": 32, "locked": true, "patterns": [] },
+    { "name": "Queue", "slug": "queue", "description": "FIFO (First In First Out) data structure patterns.", "problemCount": 6, "locked": true, "patterns": [] },
+    { "name": "Recursion", "slug": "recursion", "description": "Breaking a problem into smaller, self-similar subproblems.", "problemCount": 20, "locked": true, "patterns": [] },
+    { "name": "Linked List", "slug": "linked-list", "description": "Linear structure where elements are not stored contiguously.", "problemCount": 29, "locked": true, "patterns": [] },
+    { "name": "Double Linked List", "slug": "double-linked-list", "description": "Linked list navigable in both directions.", "problemCount": 9, "locked": true, "patterns": [] },
+    { "name": "HashMap", "slug": "hashmap", "description": "Key-value structure for O(1) average lookups.", "problemCount": 5, "locked": true, "patterns": [] },
+    { "name": "Binary Tree", "slug": "binary-tree", "description": "Hierarchical structure with a root and subtrees.", "problemCount": 54, "locked": true, "patterns": [] },
+    { "name": "Graph", "slug": "graph", "description": "Nodes connected by edges; traversal and shortest paths.", "problemCount": 43, "locked": true, "patterns": [] },
+    { "name": "Heap", "slug": "heap", "description": "Priority queue for top-k and scheduling problems.", "problemCount": 16, "locked": true, "patterns": [] },
+    { "name": "Backtracking", "slug": "backtracking", "description": "Explore choices, backtrack when a path fails.", "problemCount": 24, "locked": true, "patterns": [] },
+    { "name": "Greedy", "slug": "greedy", "description": "Make the locally optimal choice at each step.", "problemCount": 18, "locked": true, "patterns": [] },
+    { "name": "Dynamic Programming", "slug": "dynamic-programming", "description": "Store subproblem results to avoid recomputation.", "problemCount": 44, "locked": true, "patterns": [] },
+    { "name": "Trie", "slug": "trie", "description": "Prefix tree for fast string lookups.", "problemCount": 11, "locked": true, "patterns": [] },
+    { "name": "Bit Manipulation", "slug": "bit-manipulation", "description": "Solve problems using bitwise operations.", "problemCount": 16, "locked": true, "patterns": [] }
+  ]
+}

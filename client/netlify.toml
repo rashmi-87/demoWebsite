@@ -1,0 +1,11 @@
+# Netlify config for the DSA frontend (base directory: client)
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+# Single-page-app fallback: every path serves index.html so client-side
+# routes like /flashcards and /topic/... work on refresh / direct load.
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
